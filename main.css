@@ -1,0 +1,109 @@
+:root {
+  --primmary-color: rgb(29, 28, 28);
+  --secondary-color: rgb(240, 190, 96);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(29, 28, 28);
+  padding: 4em;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 4em;
+  place-content: space-between;
+}
+.container h1 {
+  font-family: Verdana;
+  margin-bottom: 1em;
+  color: white;
+  margin-top: 2em;
+  font-weight: bold;
+}
+.container p {
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+.container .img-cont {
+  height: 400px;
+  width: 300px;
+  margin-right: 4em;
+  border-radius: 2em;
+}
+.container .img-cont img {
+  border-radius: 1.5em;
+}
+
+section.sect2 {
+  display: flex;
+  place-content: space-between;
+}
+section.sect2 .cont {
+  height: 100px;
+  width: 500px;
+  background-image: linear-gradient(white, rgb(128, 123, 123));
+  margin-top: -3em;
+  color: var(--primmary-color);
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+section.sect2 .cont p {
+  margin-bottom: 1em;
+  font-family: sans-serif;
+  font-weight: 600px;
+  color: var(--primmary-color);
+  text-shadow: 1px 0px 1px black;
+}
+section.sect2 .git-cont {
+  display: flex;
+  place-content: space-between;
+  margin-right: 6em;
+}
+section.sect2 .git-cont .circle1 {
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary-color);
+  margin-right: 1em;
+  border-radius: 50%;
+  margin-right: -0.5em;
+  border: 3px solid var(--primmary-color);
+}
+section.sect2 .git-cont a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-right: 4em;
+  height: 50px;
+  width: 150px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em;
+  font-family: sans-serif;
+  text-shadow: 1px 0px 2px black;
+  font-weight: bold;
+  z-index: 1;
+}
+section.sect2 .git-cont a:hover {
+  background-color: rgb(212, 176, 107);
+  color: rgb(221, 213, 213);
+}
+section.sect2 .git-cont .circle {
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin-left: -5em;
+  border: 3px solid var(--primmary-color);
+}
